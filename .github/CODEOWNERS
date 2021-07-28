@@ -1,0 +1,3 @@
+/README.md @fastly/developer-relations
+/fastly.toml @fastly/developer-relations
+*.js @fastly/ecp-sdk-sme-javascript

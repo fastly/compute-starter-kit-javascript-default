@@ -1,0 +1,5 @@
+manifest_version = 1
+name = "Default starter for JavaScript"
+description = "A minimal boilerplate application to bootstrap JavaScript projects on Compute@Edge"
+authors = ["<oss@fastly.com>"]
+language = "javascript"
