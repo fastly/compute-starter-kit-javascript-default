@@ -4,7 +4,7 @@
 // used to route based on the request properties (such as method or path), send
 // the request to a backend, make completely new requests, and/or generate
 // synthetic responses.
-addEventListener('fetch', async function handleRequest(event) {
+addEventListener('fetch', function handleRequest(event) {
   
   // NOTE: By default, console messages are sent to stdout (and stderr for `console.error`).
   // To send them to a logging endpoint instead, use `console.setEndpoint:
