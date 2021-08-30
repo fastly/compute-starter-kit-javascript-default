@@ -7,8 +7,9 @@
 addEventListener('fetch', async function handleRequest(event) {
   
   // NOTE: By default, console messages are sent to stdout (and stderr for `console.error`).
-  // To send them to a logging endpoint instead, use `console.setEndpoint:
-  // console.setEndpoint("my-logging-endpoint");
+  // To send them to a logging endpoint instead, use `fastly.getLogger()` to get a Logger instance:
+  // const logger = fastly.getLogger("my-logging-endpoint-name");
+  // logger.log("log message");
 
   // Get the client request from the event
   let req = event.request;
