@@ -6,8 +6,8 @@
 // synthetic responses.
 addEventListener('fetch', async function handleRequest(event) {
   
-  // NOTE: By default, console messages are sent to stdout (and stderr for `console.error`).
-  // To send them to a logging endpoint instead, use `fastly.getLogger()` to get a Logger instance:
+  // Send logs to your custom logging endpoint
+  // https://developer.fastly.com/learning/compute/javascript/#logging
   // const logger = fastly.getLogger("my-logging-endpoint-name");
   // logger.log("log message");
 
