@@ -52,4 +52,4 @@ async function handleRequest(event) {
   });
   // Send the response back to the client.
   event.respondWith(response);
-});
+};
