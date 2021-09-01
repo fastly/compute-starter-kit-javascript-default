@@ -4,7 +4,9 @@
 // used to route based on the request properties (such as method or path), send
 // the request to a backend, make completely new requests, and/or generate
 // synthetic responses.
-addEventListener('fetch', function handleRequest(event) {
+addEventListener('fetch', event => event.respondWith(handleRequest(event)));
+
+async function handleRequest(event) {
   
   // Send logs to your custom logging endpoint
   // https://developer.fastly.com/learning/compute/javascript/#logging
