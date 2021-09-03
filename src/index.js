@@ -25,9 +25,9 @@ async function handleRequest(event) {
     let response = new Response("This method is not allowed", {
       status: 405
     });
+
     // Send the response back to the client.
-    event.respondWith(response);
-    return;
+    return response;
   }
 
   let method = req.method;
@@ -41,15 +41,16 @@ async function handleRequest(event) {
       status: 200,
       headers
     });
+
     // Send the response back to the client.
-    event.respondWith(response);
-    return;
+    return response;
   }
 
   // Catch all other requests and return a 404.
   let response = new Response("The page you requested could not be found", {
     status: 404
   });
+
   // Send the response back to the client.
-  event.respondWith(response);
+  return response;
 };
