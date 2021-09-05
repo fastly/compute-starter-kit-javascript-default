@@ -1,6 +1,6 @@
 {
   "name": "compute-starter-kit-javascript-default",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "src/index.js",
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
     "webpack-cli": "^4.2.0"
   },
   "dependencies": {
-    "@fastly/js-compute": "^0.1.0"
+    "@fastly/js-compute": "^0.2.0"
   },
   "scripts": {
     "prebuild": "webpack",

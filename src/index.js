@@ -4,7 +4,9 @@
 // used to route based on the request properties (such as method or path), send
 // the request to a backend, make completely new requests, and/or generate
 // synthetic responses.
-addEventListener('fetch', async function handleRequest(event) {
+addEventListener('fetch', event => event.respondWith(handleRequest(event)));
+
+async function handleRequest(event) {
   
   // Send logs to your custom logging endpoint
   // https://developer.fastly.com/learning/compute/javascript/#logging
@@ -23,9 +25,9 @@ addEventListener('fetch', async function handleRequest(event) {
     let response = new Response("This method is not allowed", {
       status: 405
     });
+
     // Send the response back to the client.
-    event.respondWith(response);
-    return;
+    return response;
   }
 
   let method = req.method;
@@ -39,15 +41,16 @@ addEventListener('fetch', async function handleRequest(event) {
       status: 200,
       headers
     });
+
     // Send the response back to the client.
-    event.respondWith(response);
-    return;
+    return response;
   }
 
   // Catch all other requests and return a 404.
   let response = new Response("The page you requested could not be found", {
     status: 404
   });
+
   // Send the response back to the client.
-  event.respondWith(response);
-});
+  return response;
+};
