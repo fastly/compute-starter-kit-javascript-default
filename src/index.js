@@ -6,8 +6,17 @@
 // synthetic responses.
 addEventListener('fetch', event => event.respondWith(handleRequest(event)));
 
+// The name of a backend server associated with this service.
+//
+// This should be changed to match the name of your own backend. See the
+// `Hosts` section of the Fastly Wasm service UI for more information.
+const BACKEND_NAME = "backend_name";
+
+/// The name of a second backend associated with this service.
+const OTHER_BACKEND_NAME = "other_backend_name";
+
 async function handleRequest(event) {
-  
+
   // Send logs to your custom logging endpoint
   // https://developer.fastly.com/learning/compute/javascript/#logging
   // const logger = fastly.getLogger("my-logging-endpoint-name");
@@ -44,6 +53,28 @@ async function handleRequest(event) {
 
     // Send the response back to the client.
     return response;
+  }
+
+  // If request is a `GET` to the `/backend` path, send to a named backend.
+  if (method == "GET" && url.pathname == "/backend") {
+    // Request handling logic could go here...
+    // E.g., send the request to an origin backend and then cache the
+    // response for one minute.
+    let cacheOverride = new CacheOverride("override", { ttl:60 });
+    return fetch(req, {
+      backend: BACKEND_NAME,
+      cacheOverride,
+    });
+  }
+
+  // If request is a `GET` to a path starting with `/other/`.
+  if (method == "GET" && url.pathname.startsWith("/other/")) {
+    // Send request to a different backend and don't cache response.
+    let cacheOverride = new CacheOverride("pass");
+    return fetch(req, {
+      backend: OTHER_BACKEND_NAME,
+      cacheOverride,
+    });
   }
 
   // Catch all other requests and return a 404.
