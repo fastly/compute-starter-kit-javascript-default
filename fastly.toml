@@ -1,5 +1,5 @@
 manifest_version = 1
 name = "Default starter for JavaScript"
-description = "A minimal boilerplate application to bootstrap JavaScript projects on Compute@Edge"
+description = "A basic starter kit that demonstrates routing, simple synthetic responses and overriding caching rules."
 authors = ["<oss@fastly.com>"]
 language = "javascript"
