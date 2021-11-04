@@ -13,7 +13,7 @@
   },
   "homepage": "https://developer.fastly.com/solutions/starters/compute-starter-kit-javascript-default",
   "engines": {
-    "node": ">=16"
+    "node": "^16"
   },
   "devDependencies": {
     "core-js": "^3.19.1",
