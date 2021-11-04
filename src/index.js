@@ -11,6 +11,9 @@ import welcomePage from "./welcome-to-compute@edge.html";
 addEventListener("fetch", (event) => event.respondWith(handleRequest(event)));
 
 async function handleRequest(event) {
+  // Get the client request.
+  let req = event.request;
+
   // Filter requests that have unexpected methods.
   if (!["HEAD", "GET"].includes(req.method)) {
     return new Response("This method is not allowed", {
@@ -18,18 +21,15 @@ async function handleRequest(event) {
     });
   }
 
-  let url = new URL(event.request.url);
+  let url = new URL(req.url);
 
   // If request is to the `/` path...
   if (url.pathname == "/") {
-    // Below are some common patterns for Compute@Edge services using Javascript.
+    // Below are some common patterns for Compute@Edge services using JavaScript.
     // Head to https://developer.fastly.com/learning/compute/javascript/ to discover more.
 
-    // Get the client request.
-    // let req = event.request;
-
     // Create a new request.
-    // let req = new Request("http://example.com");
+    // let bereq = new Request("http://example.com");
 
     // Add request headers.
     // req.headers.set("X-Custom-Header", "Welcome to Compute@Edge!");
@@ -38,10 +38,13 @@ async function handleRequest(event) {
     //   "Recommended reading: https://developer.fastly.com/learning/compute"
     // );
 
+    // Create a cache override.
+    // let cacheOverride = new CacheOverride("override", { ttl: 60 });
+
     // Forward the request to a backend.
     // let beresp = await fetch(req, {
     //   backend: "backend_name",
-    //   cacheOverride: new CacheOverride("override", { ttl: 60 }),
+    //   cacheOverride,
     // });
 
     // Remove response headers.
