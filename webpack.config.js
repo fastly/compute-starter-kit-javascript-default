@@ -28,8 +28,5 @@ module.exports = {
     // Polyfills go here.
     // Used for, e.g., any cross-platform WHATWG, 
     // or core nodejs modules needed for your application.
-    new webpack.ProvidePlugin({
-      URL: "core-js/web/url",
-    }),
   ],
 };
