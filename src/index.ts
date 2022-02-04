@@ -1,16 +1,18 @@
+/// <reference types="@fastly/js-compute" />
+
 //! Default Compute@Edge template program.
 import welcomePage from "./welcome-to-compute@edge.html";
 
 // The entry point for your application.
 //
-// Use this fetch event listener to define your main request handling logic. It could be
-// used to route based on the request properties (such as method or path), send
-// the request to a backend, make completely new requests, and/or generate
-// synthetic responses.
+// Use this fetch event listener to define your main request handling logic. It
+// could be used to route based on the request properties (such as method or
+// path), send the request to a backend, make completely new requests, and/or
+// generate synthetic responses.
 
 addEventListener("fetch", (event) => event.respondWith(handleRequest(event)));
 
-async function handleRequest(event) {
+async function handleRequest(event: FetchEvent) {
   // Get the client request.
   let req = event.request;
 
