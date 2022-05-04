@@ -1,4 +1,6 @@
 //! Default Compute@Edge template program.
+
+/// <reference types="@fastly/js-compute" />
 import welcomePage from "./welcome-to-compute@edge.html";
 
 // The entry point for your application.
