@@ -1,15 +1,15 @@
 {
   "name": "compute-starter-kit-javascript-default",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "lockfileVersion": 2,
   "requires": true,
   "packages": {
     "": {
       "name": "compute-starter-kit-javascript-default",
-      "version": "0.2.2",
+      "version": "0.3.0",
       "license": "MIT",
       "dependencies": {
-        "@fastly/js-compute": "^0.2.5"
+        "@fastly/js-compute": "^0.3.0"
       },
       "devDependencies": {
         "core-js": "^3.19.1",
@@ -30,9 +30,9 @@
       }
     },
     "node_modules/@fastly/js-compute": {
-      "version": "0.2.5",
-      "resolved": "https://registry.npmjs.org/@fastly/js-compute/-/js-compute-0.2.5.tgz",
-      "integrity": "sha512-+aqvttcD23h0h1cWv+LtVzPYyPey3YXHSOKzrnsTtHBWi9udv4+aGS06EurQO1IdBJPgA0wcpas0BrUHsIFVdA==",
+      "version": "0.3.0",
+      "resolved": "https://registry.npmjs.org/@fastly/js-compute/-/js-compute-0.3.0.tgz",
+      "integrity": "sha512-Re4F1t94QSfAzfYC54lhQ14po7aiOf7Gls4/f1E3TP7a4+VDpYwLOa3l9IPv57iKizujNd4aDhck+mzPhTylkA==",
       "bin": {
         "js-compute-runtime": "js-compute-runtime-cli.js"
       }
@@ -484,9 +484,9 @@
       }
     },
     "node_modules/electron-to-chromium": {
-      "version": "1.4.172",
-      "resolved": "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.172.tgz",
-      "integrity": "sha512-yDoFfTJnqBAB6hSiPvzmsBJSrjOXJtHSJoqJdI/zSIh7DYupYnIOHt/bbPw/WE31BJjNTybDdNAs21gCMnTh0Q==",
+      "version": "1.4.174",
+      "resolved": "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.174.tgz",
+      "integrity": "sha512-JER+w+9MV2MBVFOXxP036bLlNOnzbYAWrWU8sNUwoOO69T3w4564WhM5H5atd8VVS8U4vpi0i0kdoYzm1NPQgQ==",
       "dev": true
     },
     "node_modules/enhanced-resolve": {
@@ -1349,9 +1349,9 @@
       "dev": true
     },
     "@fastly/js-compute": {
-      "version": "0.2.5",
-      "resolved": "https://registry.npmjs.org/@fastly/js-compute/-/js-compute-0.2.5.tgz",
-      "integrity": "sha512-+aqvttcD23h0h1cWv+LtVzPYyPey3YXHSOKzrnsTtHBWi9udv4+aGS06EurQO1IdBJPgA0wcpas0BrUHsIFVdA=="
+      "version": "0.3.0",
+      "resolved": "https://registry.npmjs.org/@fastly/js-compute/-/js-compute-0.3.0.tgz",
+      "integrity": "sha512-Re4F1t94QSfAzfYC54lhQ14po7aiOf7Gls4/f1E3TP7a4+VDpYwLOa3l9IPv57iKizujNd4aDhck+mzPhTylkA=="
     },
     "@jridgewell/gen-mapping": {
       "version": "0.3.2",
@@ -1724,9 +1724,9 @@
       }
     },
     "electron-to-chromium": {
-      "version": "1.4.172",
-      "resolved": "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.172.tgz",
-      "integrity": "sha512-yDoFfTJnqBAB6hSiPvzmsBJSrjOXJtHSJoqJdI/zSIh7DYupYnIOHt/bbPw/WE31BJjNTybDdNAs21gCMnTh0Q==",
+      "version": "1.4.174",
+      "resolved": "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.174.tgz",
+      "integrity": "sha512-JER+w+9MV2MBVFOXxP036bLlNOnzbYAWrWU8sNUwoOO69T3w4564WhM5H5atd8VVS8U4vpi0i0kdoYzm1NPQgQ==",
       "dev": true
     },
     "enhanced-resolve": {
