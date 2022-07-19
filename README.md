@@ -1,4 +1,4 @@
-# Compute@Edge starter kit for JavaScript
+# Default Starter Kit for JavaScript
 
 [![Deploy to Fastly](https://deploy.edgecompute.app/button)](https://deploy.edgecompute.app/deploy)
 
