@@ -13,7 +13,7 @@
   },
   "homepage": "https://developer.fastly.com/solutions/starters/compute-starter-kit-javascript-default",
   "engines": {
-    "node": "^16"
+    "node": ">=16.0.0"
   },
   "devDependencies": {
     "core-js": "^3.19.1",
@@ -21,7 +21,7 @@
     "webpack-cli": "^4.9.1"
   },
   "dependencies": {
-    "@fastly/js-compute": "^0.5.1"
+    "@fastly/js-compute": "^0.5.2"
   },
   "scripts": {
     "prebuild": "webpack",
