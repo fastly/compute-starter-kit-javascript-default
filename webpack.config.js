@@ -31,4 +31,14 @@ module.exports = {
     // new webpack.ProvidePlugin({
     // }),
   ],
+  externals: [
+    ({request,}, callback) => {
+      // Allow Webpack to handle fastly:* namespaced module imports by treating
+      // them as modules rather than try to process them as URLs
+      if (/^fastly:.*$/.test(request)) {
+        return callback(null, 'commonjs ' + request);
+      }
+      callback();
+    }
+  ],
 };

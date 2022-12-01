@@ -20,7 +20,7 @@
     "webpack-cli": "^4.9.1"
   },
   "dependencies": {
-    "@fastly/js-compute": "^0.5.4"
+    "@fastly/js-compute": "^0.5.12"
   },
   "scripts": {
     "prebuild": "webpack",
