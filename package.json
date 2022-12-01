@@ -4,12 +4,12 @@
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fastly/compute-starter-kit-js-proto.git"
+    "url": "git+https://github.com/fastly/compute-starter-kit-javascript-default.git"
   },
   "author": "oss@fastly.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fastly/compute-starter-kit-js-proto/issues"
+    "url": "https://github.com/fastly/compute-starter-kit-javascript-default/issues"
   },
   "homepage": "https://developer.fastly.com/solutions/starters/compute-starter-kit-javascript-default",
   "engines": {
