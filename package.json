@@ -4,24 +4,23 @@
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fastly/compute-starter-kit-js-proto.git"
+    "url": "git+https://github.com/fastly/compute-starter-kit-javascript-default.git"
   },
   "author": "oss@fastly.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fastly/compute-starter-kit-js-proto/issues"
+    "url": "https://github.com/fastly/compute-starter-kit-javascript-default/issues"
   },
   "homepage": "https://developer.fastly.com/solutions/starters/compute-starter-kit-javascript-default",
   "engines": {
     "node": ">=16.0.0"
   },
   "devDependencies": {
-    "core-js": "^3.19.1",
-    "webpack": "^5.64.0",
-    "webpack-cli": "^4.9.1"
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0"
   },
   "dependencies": {
-    "@fastly/js-compute": "^0.5.4"
+    "@fastly/js-compute": "^0.5.12"
   },
   "scripts": {
     "prebuild": "webpack",
