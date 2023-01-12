@@ -14,14 +14,8 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        // Asset modules are modules that allow the use asset files (fonts, icons, etc)
-        // without additional configuration or dependencies.
-        // asset/source exports the source code of the asset.
-        // Usage: e.g., import notFoundPage from "./page_404.html"
-        test: /\.(txt|html)/,
-        type: "asset/source",
-      },
+      // Loaders go here.
+      // e.g., ts-loader for TypeScript
     ],
   },
   plugins: [
