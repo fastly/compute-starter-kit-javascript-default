@@ -9,7 +9,7 @@
       "version": "0.3.0",
       "license": "MIT",
       "dependencies": {
-        "@fastly/js-compute": "^0.5.12"
+        "@fastly/js-compute": "^1.1.0"
       },
       "devDependencies": {
         "webpack": "^5.75.0",
@@ -59,12 +59,13 @@
       }
     },
     "node_modules/@fastly/js-compute": {
-      "version": "0.5.12",
-      "resolved": "https://registry.npmjs.org/@fastly/js-compute/-/js-compute-0.5.12.tgz",
-      "integrity": "sha512-GbqQL/ztKyFnD/ZEGeVrLP19Ogs8IxHvPn2jfc1odvGui5v44iWt6JNhOLE8sTZs8wtpilxyH8UUndKbhZlQBw==",
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/@fastly/js-compute/-/js-compute-1.1.0.tgz",
+      "integrity": "sha512-fuBQVh9VOqJc/1A/UNgkeEO7J9/HbZLMbhCropzsEdqkMaFrZPinpz8AePMoJSAQon+tPsYLKuMk0JcCF4bjRA==",
       "dependencies": {
-        "@jakechampion/wizer": "^1.5.3",
+        "@jakechampion/wizer": "^1.6.0",
         "esbuild": "^0.15.16",
+        "js-component-tools": "^0.2.2",
         "tree-sitter": "^0.20.1",
         "tree-sitter-javascript": "^0.19.0"
       },
@@ -72,14 +73,14 @@
         "js-compute-runtime": "js-compute-runtime-cli.js"
       },
       "engines": {
-        "node": "16 - 19",
+        "node": "16 - 18",
         "npm": "^8"
       }
     },
     "node_modules/@jakechampion/wizer": {
-      "version": "1.5.3",
-      "resolved": "https://registry.npmjs.org/@jakechampion/wizer/-/wizer-1.5.3.tgz",
-      "integrity": "sha512-hSMb5AMjeRi05F9ERoqJ+3BM5jrjkQn/s5A8EIt8drV4K9jHX/3vSTHPGGY8t8nNWhjk5UW4FrBYonIy7gpvtw==",
+      "version": "1.6.0",
+      "resolved": "https://registry.npmjs.org/@jakechampion/wizer/-/wizer-1.6.0.tgz",
+      "integrity": "sha512-o9BMmF+4IB0zfMoh14Ds3womotxETcroqaYMWt2gSlBBmqRc+oqG1LXGCJMB6Vp24ZUVxWkVFs2LLXE6Iyz9rg==",
       "bin": {
         "wizer": "wizer.js"
       },
@@ -87,16 +88,16 @@
         "node": ">=16"
       },
       "optionalDependencies": {
-        "@jakechampion/wizer-darwin-arm64": "1.5.3",
-        "@jakechampion/wizer-darwin-x64": "1.5.3",
-        "@jakechampion/wizer-linux-x64": "1.5.3",
-        "@jakechampion/wizer-win32-x64": "1.5.3"
+        "@jakechampion/wizer-darwin-arm64": "1.6.0",
+        "@jakechampion/wizer-darwin-x64": "1.6.0",
+        "@jakechampion/wizer-linux-x64": "1.6.0",
+        "@jakechampion/wizer-win32-x64": "1.6.0"
       }
     },
     "node_modules/@jakechampion/wizer-darwin-arm64": {
-      "version": "1.5.3",
-      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-darwin-arm64/-/wizer-darwin-arm64-1.5.3.tgz",
-      "integrity": "sha512-9Q+UI9YgLIWxiYskJc5KAkWXsHecuGlIh2Ww12LcEgo7l2lq7D/67E4XB4S5iA33IG3kxAwPqAmBmvlYxdU7pg==",
+      "version": "1.6.0",
+      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-darwin-arm64/-/wizer-darwin-arm64-1.6.0.tgz",
+      "integrity": "sha512-bQdIPdR+Ye0GiNdirVhx0kx14oY2uzwXfh/2dDgteBdcb7mDubzKbdt3ROMyV1UFRVhOtqbthZNk7qLBB6Occg==",
       "cpu": [
         "arm64"
       ],
@@ -109,9 +110,9 @@
       }
     },
     "node_modules/@jakechampion/wizer-darwin-x64": {
-      "version": "1.5.3",
-      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-darwin-x64/-/wizer-darwin-x64-1.5.3.tgz",
-      "integrity": "sha512-tO25Y9dlbjUHyVa79KDk8nuTdBA81Tv/NrzIoKiSJS1lUsv87crAVNVbvazYewkvvJ7HnF89X9zFzmrp0NjL0w==",
+      "version": "1.6.0",
+      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-darwin-x64/-/wizer-darwin-x64-1.6.0.tgz",
+      "integrity": "sha512-b+hdpZbhilsroSJU4Z2t+qj9lz3lr3M0TTyM8vlHODP0j8ZabZwPM8314wuSdSrHM5fZ9qIAO2Q94AUBBOeuRA==",
       "cpu": [
         "x64"
       ],
@@ -124,9 +125,9 @@
       }
     },
     "node_modules/@jakechampion/wizer-linux-x64": {
-      "version": "1.5.3",
-      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-linux-x64/-/wizer-linux-x64-1.5.3.tgz",
-      "integrity": "sha512-LCa2Z6ASJnTWqtRSnZrAoVeb+UyV0K5bDYKRHyUrOof0Y8sf5ElrNlM+OgV4QRfP3f/YnOrJ0A44zyIeQjkwwA==",
+      "version": "1.6.0",
+      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-linux-x64/-/wizer-linux-x64-1.6.0.tgz",
+      "integrity": "sha512-nOH/wwoN/jaLYBKyCnEQJtqEOrSuXMOWIdnh/vAp5w4sFXuyelyZY0k6g9b8puzLOyXJTrUoYfhHyf2vdLGlxQ==",
       "cpu": [
         "x64"
       ],
@@ -139,9 +140,9 @@
       }
     },
     "node_modules/@jakechampion/wizer-win32-x64": {
-      "version": "1.5.3",
-      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-win32-x64/-/wizer-win32-x64-1.5.3.tgz",
-      "integrity": "sha512-8m+7XIcUmibXT7ZSlbseDzFHJg0mqnTL5wKE6ALFFE/jxs/EUq94V5UgX9Whaj6r9LGgbi3//SdE6th/ghhtHQ==",
+      "version": "1.6.0",
+      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-win32-x64/-/wizer-win32-x64-1.6.0.tgz",
+      "integrity": "sha512-9xzpraJIhLdOnXTC1DjxjyfV52BBlAZTTAlpnE04GxVRvRGZ6wPi/RdACkg3inAfeTP7A/bTq3BJLql/Hansdw==",
       "cpu": [
         "x64"
       ],
@@ -1420,6 +1421,14 @@
         "node": ">= 10.13.0"
       }
     },
+    "node_modules/js-component-tools": {
+      "version": "0.2.3",
+      "resolved": "https://registry.npmjs.org/js-component-tools/-/js-component-tools-0.2.3.tgz",
+      "integrity": "sha512-hktKSgBaEk/Ttpl3ejBseeQn4K41wJijEA8YgxGXhyfCf5zT7YdEq1LYn+IYCPENEVgdcPK1c2ntbPKVjWeNJg==",
+      "bin": {
+        "jsct": "cli.mjs"
+      }
+    },
     "node_modules/json-parse-even-better-errors": {
       "version": "2.3.1",
       "resolved": "https://registry.npmjs.org/json-parse-even-better-errors/-/json-parse-even-better-errors-2.3.1.tgz",
@@ -2375,49 +2384,50 @@
       "optional": true
     },
     "@fastly/js-compute": {
-      "version": "0.5.12",
-      "resolved": "https://registry.npmjs.org/@fastly/js-compute/-/js-compute-0.5.12.tgz",
-      "integrity": "sha512-GbqQL/ztKyFnD/ZEGeVrLP19Ogs8IxHvPn2jfc1odvGui5v44iWt6JNhOLE8sTZs8wtpilxyH8UUndKbhZlQBw==",
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/@fastly/js-compute/-/js-compute-1.1.0.tgz",
+      "integrity": "sha512-fuBQVh9VOqJc/1A/UNgkeEO7J9/HbZLMbhCropzsEdqkMaFrZPinpz8AePMoJSAQon+tPsYLKuMk0JcCF4bjRA==",
       "requires": {
-        "@jakechampion/wizer": "^1.5.3",
+        "@jakechampion/wizer": "^1.6.0",
         "esbuild": "^0.15.16",
+        "js-component-tools": "^0.2.2",
         "tree-sitter": "^0.20.1",
         "tree-sitter-javascript": "^0.19.0"
       }
     },
     "@jakechampion/wizer": {
-      "version": "1.5.3",
-      "resolved": "https://registry.npmjs.org/@jakechampion/wizer/-/wizer-1.5.3.tgz",
-      "integrity": "sha512-hSMb5AMjeRi05F9ERoqJ+3BM5jrjkQn/s5A8EIt8drV4K9jHX/3vSTHPGGY8t8nNWhjk5UW4FrBYonIy7gpvtw==",
+      "version": "1.6.0",
+      "resolved": "https://registry.npmjs.org/@jakechampion/wizer/-/wizer-1.6.0.tgz",
+      "integrity": "sha512-o9BMmF+4IB0zfMoh14Ds3womotxETcroqaYMWt2gSlBBmqRc+oqG1LXGCJMB6Vp24ZUVxWkVFs2LLXE6Iyz9rg==",
       "requires": {
-        "@jakechampion/wizer-darwin-arm64": "1.5.3",
-        "@jakechampion/wizer-darwin-x64": "1.5.3",
-        "@jakechampion/wizer-linux-x64": "1.5.3",
-        "@jakechampion/wizer-win32-x64": "1.5.3"
+        "@jakechampion/wizer-darwin-arm64": "1.6.0",
+        "@jakechampion/wizer-darwin-x64": "1.6.0",
+        "@jakechampion/wizer-linux-x64": "1.6.0",
+        "@jakechampion/wizer-win32-x64": "1.6.0"
       }
     },
     "@jakechampion/wizer-darwin-arm64": {
-      "version": "1.5.3",
-      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-darwin-arm64/-/wizer-darwin-arm64-1.5.3.tgz",
-      "integrity": "sha512-9Q+UI9YgLIWxiYskJc5KAkWXsHecuGlIh2Ww12LcEgo7l2lq7D/67E4XB4S5iA33IG3kxAwPqAmBmvlYxdU7pg==",
+      "version": "1.6.0",
+      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-darwin-arm64/-/wizer-darwin-arm64-1.6.0.tgz",
+      "integrity": "sha512-bQdIPdR+Ye0GiNdirVhx0kx14oY2uzwXfh/2dDgteBdcb7mDubzKbdt3ROMyV1UFRVhOtqbthZNk7qLBB6Occg==",
       "optional": true
     },
     "@jakechampion/wizer-darwin-x64": {
-      "version": "1.5.3",
-      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-darwin-x64/-/wizer-darwin-x64-1.5.3.tgz",
-      "integrity": "sha512-tO25Y9dlbjUHyVa79KDk8nuTdBA81Tv/NrzIoKiSJS1lUsv87crAVNVbvazYewkvvJ7HnF89X9zFzmrp0NjL0w==",
+      "version": "1.6.0",
+      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-darwin-x64/-/wizer-darwin-x64-1.6.0.tgz",
+      "integrity": "sha512-b+hdpZbhilsroSJU4Z2t+qj9lz3lr3M0TTyM8vlHODP0j8ZabZwPM8314wuSdSrHM5fZ9qIAO2Q94AUBBOeuRA==",
       "optional": true
     },
     "@jakechampion/wizer-linux-x64": {
-      "version": "1.5.3",
-      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-linux-x64/-/wizer-linux-x64-1.5.3.tgz",
-      "integrity": "sha512-LCa2Z6ASJnTWqtRSnZrAoVeb+UyV0K5bDYKRHyUrOof0Y8sf5ElrNlM+OgV4QRfP3f/YnOrJ0A44zyIeQjkwwA==",
+      "version": "1.6.0",
+      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-linux-x64/-/wizer-linux-x64-1.6.0.tgz",
+      "integrity": "sha512-nOH/wwoN/jaLYBKyCnEQJtqEOrSuXMOWIdnh/vAp5w4sFXuyelyZY0k6g9b8puzLOyXJTrUoYfhHyf2vdLGlxQ==",
       "optional": true
     },
     "@jakechampion/wizer-win32-x64": {
-      "version": "1.5.3",
-      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-win32-x64/-/wizer-win32-x64-1.5.3.tgz",
-      "integrity": "sha512-8m+7XIcUmibXT7ZSlbseDzFHJg0mqnTL5wKE6ALFFE/jxs/EUq94V5UgX9Whaj6r9LGgbi3//SdE6th/ghhtHQ==",
+      "version": "1.6.0",
+      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-win32-x64/-/wizer-win32-x64-1.6.0.tgz",
+      "integrity": "sha512-9xzpraJIhLdOnXTC1DjxjyfV52BBlAZTTAlpnE04GxVRvRGZ6wPi/RdACkg3inAfeTP7A/bTq3BJLql/Hansdw==",
       "optional": true
     },
     "@jridgewell/gen-mapping": {
@@ -3290,6 +3300,11 @@
         "merge-stream": "^2.0.0",
         "supports-color": "^8.0.0"
       }
+    },
+    "js-component-tools": {
+      "version": "0.2.3",
+      "resolved": "https://registry.npmjs.org/js-component-tools/-/js-component-tools-0.2.3.tgz",
+      "integrity": "sha512-hktKSgBaEk/Ttpl3ejBseeQn4K41wJijEA8YgxGXhyfCf5zT7YdEq1LYn+IYCPENEVgdcPK1c2ntbPKVjWeNJg=="
     },
     "json-parse-even-better-errors": {
       "version": "2.3.1",

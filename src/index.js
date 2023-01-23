@@ -4,7 +4,11 @@
 
 // import { CacheOverride } from "fastly:cache-override";
 // import { Logger } from "fastly:logger";
-import welcomePage from "./welcome-to-compute@edge.html";
+import { includeBytes } from "fastly:experimental";
+
+// Load a static file as a Uint8Array at compile time.
+// File path is relative to root of project, not to this file
+const welcomePage = includeBytes("./src/welcome-to-compute@edge.html");
 
 // The entry point for your application.
 //
