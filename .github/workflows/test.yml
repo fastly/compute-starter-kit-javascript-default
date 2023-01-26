@@ -6,7 +6,7 @@ jobs:
       matrix:
         platform: [ubuntu-latest]
     runs-on: ${{ matrix.platform }}
-    steps:    
+    steps:
     - name: Checkout code
       uses: actions/checkout@v3
     - uses: actions/setup-node@v3
@@ -19,5 +19,5 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-node-
     - run: npm ci
-    - name: Build
-      run: npm run build
+    - name: build
+      run: npm exec js-compute-runtime ./src/index.js ./bin/main.wasm
