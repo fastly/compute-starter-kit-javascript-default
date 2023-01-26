@@ -6,18 +6,18 @@ jobs:
       matrix:
         platform: [ubuntu-latest]
     runs-on: ${{ matrix.platform }}
-    steps:
+    steps:    
     - name: Checkout code
-      uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
+      uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
       with:
-        node-version: '16'
-    - uses: actions/cache@v2
+        node-version: '18'
+    - uses: actions/cache@v3
       with:
         path: ~/.npm
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-node-
     - run: npm ci
-    - name: build
+    - name: Build
       run: npm run build
