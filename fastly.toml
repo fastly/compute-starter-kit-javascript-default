@@ -1,12 +1,5 @@
-# This file describes a Fastly Compute@Edge package. To learn more visit:
-# https://developer.fastly.com/reference/fastly-toml/
-
 authors = ["<oss@fastly.com>"]
 description = "A basic starter kit that demonstrates routing, simple synthetic responses and overriding caching rules."
 language = "javascript"
 manifest_version = 2
 name = "Default starter for JavaScript"
-service_id = ""
-
-[scripts]
-  build = "npm exec js-compute-runtime ./src/index.js ./bin/main.wasm"
