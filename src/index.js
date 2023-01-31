@@ -20,6 +20,9 @@ const welcomePage = includeBytes("./src/welcome-to-compute@edge.html");
 addEventListener("fetch", (event) => event.respondWith(handleRequest(event)));
 
 async function handleRequest(event) {
+  // Log service version
+  console.log("FASTLY_SERVICE_VERSION:", fastly.env.get('FASTLY_SERVICE_VERSION' || ''));
+  
   // Get the client request.
   let req = event.request;
 
