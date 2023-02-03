@@ -2,6 +2,7 @@
   "name": "compute-starter-kit-javascript-default",
   "version": "0.4.0",
   "main": "src/index.js",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fastly/compute-starter-kit-javascript-default.git"
