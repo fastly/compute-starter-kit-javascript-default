@@ -27,7 +27,7 @@ async function handleRequest(event) {
   let req = event.request;
 
   // Filter requests that have unexpected methods.
-  if (!["HEAD", "GET"].includes(req.method)) {
+  if (!["HEAD", "GET", "PURGE"].includes(req.method)) {
     return new Response("This method is not allowed", {
       status: 405,
     });
