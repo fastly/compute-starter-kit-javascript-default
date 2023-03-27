@@ -1,9 +1,9 @@
 //! Default Compute@Edge template program.
 
 /// <reference types="@fastly/js-compute" />
-
 // import { CacheOverride } from "fastly:cache-override";
 // import { Logger } from "fastly:logger";
+import { env } from "fastly:env";
 import { includeBytes } from "fastly:experimental";
 
 // Load a static file as a Uint8Array at compile time.
@@ -21,7 +21,7 @@ addEventListener("fetch", (event) => event.respondWith(handleRequest(event)));
 
 async function handleRequest(event) {
   // Log service version
-  console.log("FASTLY_SERVICE_VERSION:", fastly.env.get('FASTLY_SERVICE_VERSION' || ''));
+  console.log("FASTLY_SERVICE_VERSION:", env('FASTLY_SERVICE_VERSION') || 'local');
   
   // Get the client request.
   let req = event.request;
