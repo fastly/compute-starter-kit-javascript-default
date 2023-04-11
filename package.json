@@ -13,7 +13,7 @@
   },
   "homepage": "https://developer.fastly.com/solutions/starters/compute-starter-kit-javascript-default",
   "engines": {
-    "node": ">=18.0.0"
+    "node": "^18.0.0"
   },
   "dependencies": {
     "@fastly/js-compute": "^1.5.1"
