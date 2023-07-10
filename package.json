@@ -16,7 +16,7 @@
     "node": "^18.0.0"
   },
   "dependencies": {
-    "@fastly/js-compute": "^2.2.1"
+    "@fastly/js-compute": "^3.0.0"
   },
   "devDependencies": {
     "webpack": "^5.78.0",
