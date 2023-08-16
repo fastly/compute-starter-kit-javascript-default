@@ -9,3 +9,4 @@ name = "Default starter for JavaScript"
 
 [scripts]
 build = "npm run build"
+post_init = "npm install"
