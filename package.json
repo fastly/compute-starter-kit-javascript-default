@@ -3,11 +3,11 @@
     "node": "^18.0.0"
   },
   "dependencies": {
-    "@fastly/js-compute": "^3.3.2"
+    "@fastly/js-compute": "^3.7.0"
   },
   "devDependencies": {
-    "webpack": "^5.78.0",
-    "webpack-cli": "^5.0.1"
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   },
   "scripts": {
     "prebuild": "webpack",
