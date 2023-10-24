@@ -1,4 +1,4 @@
-//! Default Compute@Edge template program.
+//! Default Compute template program.
 
 /// <reference types="@fastly/js-compute" />
 // import { CacheOverride } from "fastly:cache-override";
@@ -8,7 +8,7 @@ import { includeBytes } from "fastly:experimental";
 
 // Load a static file as a Uint8Array at compile time.
 // File path is relative to root of project, not to this file
-const welcomePage = includeBytes("./src/welcome-to-compute@edge.html");
+const welcomePage = includeBytes("./src/welcome-to-compute.html");
 
 // The entry point for your application.
 //
@@ -37,14 +37,14 @@ async function handleRequest(event) {
 
   // If request is to the `/` path...
   if (url.pathname == "/") {
-    // Below are some common patterns for Compute@Edge services using JavaScript.
+    // Below are some common patterns for Compute services using JavaScript.
     // Head to https://developer.fastly.com/learning/compute/javascript/ to discover more.
 
     // Create a new request.
     // let bereq = new Request("http://example.com");
 
     // Add request headers.
-    // req.headers.set("X-Custom-Header", "Welcome to Compute@Edge!");
+    // req.headers.set("X-Custom-Header", "Welcome to Compute!");
     // req.headers.set(
     //   "X-Another-Custom-Header",
     //   "Recommended reading: https://developer.fastly.com/learning/compute"
