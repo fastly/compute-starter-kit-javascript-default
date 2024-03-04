@@ -36,7 +36,7 @@ async function handleRequest(event) {
   let url = new URL(req.url);
 
   // If request is to the `/` path...
-  if (url.pathname == "/") {
+  if (url.pathname === "/") {
     // Below are some common patterns for Compute services using JavaScript.
     // Head to https://developer.fastly.com/learning/compute/javascript/ to discover more.
 
