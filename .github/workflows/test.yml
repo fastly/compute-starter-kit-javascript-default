@@ -9,15 +9,15 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
+    - name: Setup Node
+      uses: actions/setup-node@v3
       with:
         node-version: '18'
-    - uses: actions/cache@v3
+    - name: Setup Fastly CLI
+      uses: fastly/compute-actions/setup@v5
+    - name: Install Dependencies
+      run: npm install
+    - name: Build Compute Package
+      uses: fastly/compute-actions/build@v5
       with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
-    - run: npm ci
-    - name: build
-      run: npm run build
+        verbose: true
