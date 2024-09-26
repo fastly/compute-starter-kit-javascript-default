@@ -20,6 +20,12 @@ The starter doesn't require the use of any backends. Once deployed, you will hav
 
 The template uses webpack to bundle `index.js` and its imports into a single JS file, `bin/index.js`, which is then wrapped into a `.wasm` file, `bin/index.wasm` using the `js-compute-runtime` CLI tool bundled with the `@fastly/js-compute` npm package, and bundled into a `.tar.gz` file ready for deployment to Compute.
 
+## New to Fastly Compute?
+
+The [Fastly Compute platform](https://www.fastly.com/documentation/guides/compute/) is an advanced edge computing system that runs your code, in your favorite language, on its global edge network. Security and portability are provided by compiling your code to WebAssembly.
+
+Get started with your [free Fastly developer account](https://www.fastly.com/signup/?tier=free), and join the [Fastly community forum](https://community.fastly.com/) to ask any questions and show off the sites that you build!
+
 ## Security issues
 
 Please see our [SECURITY.md](SECURITY.md) for guidance on reporting security-related issues.
