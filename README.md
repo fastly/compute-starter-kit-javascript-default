@@ -20,6 +20,26 @@ The starter doesn't require the use of any backends. Once deployed, you will hav
 
 The template uses webpack to bundle `index.js` and its imports into a single JS file, `bin/index.js`, which is then wrapped into a `.wasm` file, `bin/index.wasm` using the `js-compute-runtime` CLI tool bundled with the `@fastly/js-compute` npm package, and bundled into a `.tar.gz` file ready for deployment to Compute.
 
+## Running the application
+
+To create an application using this starter kit, create a new directory for your application and switch to it, and then type the following command:
+
+```shell
+npm create @fastly/compute@latest -- --language=javascript --default-starter-kit
+```
+
+To build and run your new application in the local development environment, type the following command:
+
+```shell
+npm run start
+```
+
+To build and deploy your application to your Fastly account, type the following command. The first time you deploy the application, you will be prompted to create a new service in your account. 
+
+```shell
+npm run deploy
+```
+
 ## Security issues
 
 Please see our [SECURITY.md](SECURITY.md) for guidance on reporting security-related issues.
