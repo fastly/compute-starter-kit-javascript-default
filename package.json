@@ -1,18 +1,12 @@
 {
-  "engines": {
-    "node": "^18.0.0"
-  },
   "dependencies": {
     "@fastly/js-compute": "^3.0.0"
   },
   "devDependencies": {
-    "@fastly/cli": "^10.14.0",
-    "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4"
+    "@fastly/cli": "^10.14.0"
   },
   "scripts": {
-    "prebuild": "webpack",
-    "build": "js-compute-runtime bin/index.js bin/main.wasm",
+    "build": "js-compute-runtime src/index.js bin/main.wasm",
     "start": "fastly compute serve",
     "deploy": "fastly compute publish"
   }
