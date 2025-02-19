@@ -24,7 +24,7 @@ async function handleRequest(event) {
   console.log("FASTLY_SERVICE_VERSION:", env('FASTLY_SERVICE_VERSION') || 'local');
   
   // Get the client request.
-  let req = event.request;
+  const req = event.request;
 
   // Filter requests that have unexpected methods.
   if (["POST", "PUT", "PATCH", "DELETE"].includes(req.method)) {
@@ -33,7 +33,7 @@ async function handleRequest(event) {
     });
   }
 
-  let url = new URL(req.url);
+  const url = new URL(req.url);
 
   // If request is to the `/` path...
   if (url.pathname === "/") {
@@ -41,7 +41,7 @@ async function handleRequest(event) {
     // Head to https://developer.fastly.com/learning/compute/javascript/ to discover more.
 
     // Create a new request.
-    // let bereq = new Request("http://example.com");
+    // const bereq = new Request("http://example.com");
 
     // Add request headers.
     // req.headers.set("X-Custom-Header", "Welcome to Compute!");
@@ -52,10 +52,10 @@ async function handleRequest(event) {
 
     // Create a cache override.
     // To use this, uncomment the import statement at the top of this file for CacheOverride.
-    // let cacheOverride = new CacheOverride("override", { ttl: 60 });
+    // const cacheOverride = new CacheOverride("override", { ttl: 60 });
 
     // Forward the request to a backend.
-    // let beresp = await fetch(req, {
+    // const beresp = await fetch(req, {
     //   backend: "backend_name",
     //   cacheOverride,
     // });
