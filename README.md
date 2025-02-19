@@ -38,6 +38,12 @@ To build and deploy your application to your Fastly account, type the following 
 npm run deploy
 ```
 
+## New to Fastly Compute?
+
+The [Fastly Compute platform](https://www.fastly.com/documentation/guides/compute/) is an advanced edge computing system that runs your code, in your favorite language, on its global edge network. Security and portability are provided by compiling your code to WebAssembly.
+
+Get started with your [free Fastly developer account](https://www.fastly.com/signup/?tier=free), and join the [Fastly community forum](https://community.fastly.com/) to ask any questions and show off the sites that you build!
+
 ## Security issues
 
 Please see our [SECURITY.md](SECURITY.md) for guidance on reporting security-related issues.
