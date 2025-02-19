@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@fastly/js-compute": "^3.0.0"
+    "@fastly/js-compute": "^3.30.1"
   },
   "devDependencies": {
     "@fastly/cli": "^10.14.0"

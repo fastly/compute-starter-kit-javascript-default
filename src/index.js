@@ -52,7 +52,7 @@ async function handleRequest(event) {
 
     // Create a cache override.
     // To use this, uncomment the import statement at the top of this file for CacheOverride.
-    // const cacheOverride = new CacheOverride("override", { ttl: 60 });
+    // const cacheOverride = new CacheOverride({ ttl: 60 });
 
     // Forward the request to a backend.
     // const beresp = await fetch(req, {
