@@ -1,9 +1,11 @@
 {
+  "type": "module",
+  "private": true,
   "dependencies": {
-    "@fastly/js-compute": "^3.30.1"
+    "@fastly/js-compute": "^3.33.2"
   },
   "devDependencies": {
-    "@fastly/cli": "^10.14.0"
+    "@fastly/cli": "^11.0.0"
   },
   "scripts": {
     "build": "js-compute-runtime src/index.js bin/main.wasm",
