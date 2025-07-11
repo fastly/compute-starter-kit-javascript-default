@@ -1,0 +1,14 @@
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    github.com/project-slug: fastly/compute-starter-kit-javascript-default
+  description: Default package template for JavaScript based Fastly Compute projects
+  name: compute-starter-kit-javascript-default
+  title: fastly/compute-starter-kit-javascript-default
+spec:
+  lifecycle: source
+  owner: group:developer-relations
+  type: repository
