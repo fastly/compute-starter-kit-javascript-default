@@ -5,7 +5,7 @@
     "@fastly/js-compute": "^3.33.2"
   },
   "devDependencies": {
-    "@fastly/cli": "^11.0.0"
+    "@fastly/cli": "^12.1.0"
   },
   "scripts": {
     "build": "js-compute-runtime src/index.js bin/main.wasm",
